@@ -33,3 +33,7 @@ h1 {
     color: var(--clr-white);
     text-transform: capitalize;
 }
+
+.slide .switch {
+    left: 50%;
+}

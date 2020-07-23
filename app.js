@@ -13,4 +13,11 @@ btn.addEventListener('click', function() {
 })
 
 // setup preloader
+//  use load event - fired when the whole page has loaded, 
+// not DOMContentLoaded because it fires after initial html document is loaded and parsed, will interrupt js/css/images/video/etc
 
+const preloader = document.querySelector('.preloader')
+
+window.addEventListener('load', function() {
+    preloader.classList.add('hide-preloader')
+})
